@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #121321;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    color: #fff;
+
+
+    
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px,  -100px);
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+}
+
+
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    backdrop-filter:blur(25px);
+    border-radius: 50%;
+    transform: translate(150px,  100px);
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+}
+
+.container{
+    height: 275px;
+    width: 375px;
+}
+
+.container .card{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;    
+}   
+
+.font-face .logo img{
+    width: 48px;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.font-face .chip{
+    width: 50px;
+    
+
+}
+.rounded-border {
+    border-radius: 200px; /* Adjust the radius as needed */
+    border: 2px solid #000; /* Optional: Add a border around the image */
+    width: 300px; /* Optional: Adjust the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+}
